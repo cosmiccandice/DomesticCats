@@ -1,5 +1,25 @@
-# astroMVP
+Matt Mechtley - Aug 2013 - https://github.com/mmechtley
+Python programmatic interface to the NASA/IPAC Extragalactic Database (NED)
+Galactic Extinction Calculator. This module builds an HTTP request based on the
+user-supplied coordinates and parses the response HTML to extract A_lambda
+values for the specified filters.
 
-[![codeastro](https://img.shields.io/badge/Made%20at-Code/Astro-blueviolet.svg)](https://semaphorep.github.io/codeastro/)
+Original web form version:
+http://ned.ipac.caltech.edu/forms/calculator.html
 
-Astronomy's Most Valuable Paper in each topics, letting you follow the chain of knowledge
+Installation:
+-------------
+Standard:
+python setup.py install
+
+Using a non-standard library location (e.g. Dropbox):
+python setup.py install --prefix=~/Dropbox/Python
+
+Example Usage:
+--------------
+from ned_extinction_calc import request_extinctions
+
+ra, dec = '11:48:16.64', '+52:51:50.3'
+
+filts = ['WFC3 F125W', 'WFC3 F160W']
+A_lams = request_extinctions(ra, dec, filters=filts)
