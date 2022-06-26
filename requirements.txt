@@ -1,0 +1,6 @@
+pandas
+numpy
+os
+matplotlib.pyplot
+matplotlib.mlab
+Alerce
