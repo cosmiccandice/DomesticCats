@@ -1,6 +1,6 @@
 # DOMESTIC CATS
 
-Ran**DOM** For**EST** **I**n **C**lassification of **CAT**aclysmic variables and **S**upernovae (**DOMESTIC CATS**) is a model trained with data from ZTF that is availble as little as a day after detection to classify supernovae and cataclysmic variables at early times specifically designed for the Young Supernovae Experiment (YSE). 
+Ran**DOM** For**EST** **I**n **C**lassification of **CAT**aclysmic variables and **S**upernovae (**DOMESTIC CATS**) is a model trained with data from ZTF that is availble as little as a day after the detection of an event to classify supernovae and cataclysmic variables at early times specifically designed for the Young Supernovae Experiment (YSE). 
 
 **By entering the object ID of an event from YSE, DOMESTIC CATS will predict whether that object is more likely a supernova or cataclsymic variable.** 
 
