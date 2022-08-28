@@ -14,8 +14,8 @@ if obj_or_file == 'object':
     yse_name = input("YSE Name: ")
     yse_ra = input("RA: ")
     yse_dec = input("Dec: ")
-    na = 'na'
-    YSE_object_dict = {'ZTF Name': str(yse_name),'classification':na ,'ra': [yse_ra], 'dec': [yse_dec]}
+    na = ''
+    YSE_object_dict = {'ZTF Name': str(yse_name),'classification':na ,'transient_RA': [yse_ra], 'transient_Dec': [yse_dec]}
     YSE_object_df = pd.DataFrame(data = YSE_object_dict)
     YSE_object_df.to_csv('Data_Input/object_'+yse_name+'.csv',index=False)
     newtrans = YSE_object_df
