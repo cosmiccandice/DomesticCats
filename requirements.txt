@@ -1,6 +1,9 @@
 pandas
 numpy
 os
+matplotlib
 matplotlib.pyplot
 matplotlib.mlab
 alerce
+dust_extinction
+sklearn
