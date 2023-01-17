@@ -17,8 +17,10 @@ if obj_or_file == 'object':
     na = ''
     YSE_object_dict = {'ZTF Name': str(yse_name),'classification':na ,'transient_RA': [yse_ra], 'transient_Dec': [yse_dec]}
     YSE_object_df = pd.DataFrame(data = YSE_object_dict)
+    print (YSE_object_df)
     YSE_object_df.to_csv('Data_Input/object_'+yse_name+'.csv',index=False)
-    newtrans = YSE_object_df
+    newtrans = pd.read_csv('Data_Input/object_'+yse_name+'.csv')
+
 
 #For a list of objects in a file for which the user will enter the filename (inclduing extension).
 if obj_or_file == 'file':
